@@ -25,19 +25,19 @@ This package integrates the [WTForms](https://wtforms.readthedocs.io/en/3.0.x/) 
 
 ## Installation Guide
 
-Αρχικά κατεβάζουμε το anaconda από το εδώ και το εγκαθιστούμε https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe.
+First we download anaconda from here and install it https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe.
 
-Από το command promt του ανακόντα με χρήση του cd μπαίνουμε στο directory του folder που κατεβάσαμε από το github.
+From the command promt of anaconda using cd we enter the directory of the folder we downloaded from github.
 
-Έπειτα πληκτρολογούμε και τρέχουμε την εντολή `pip install -r requirements.txt` ώστε να εγκαταστήσουμε όλα τα απαραίτητα πακέτα για το framework του webapp και για τη σύνδεση της βάσης με αυτό.
+Then we type and run the pip install -r requirements.txt command to install all the necessary packages for the webapp framework and for connecting the base to it.
 
-Στη συνέχεια ,και αφού έχουμε κατοχυρώσει και επιβεβαιώσει σύνδεση κάνοντας χρήση του xampp (“run as administrator”), εκτελούμε τα αρχεία `schema.sql`, `triggers.sql`, `views.sql` και `data.sql` με την σειρά που αναγράφονται, ενδεικτικά μέσω του `MySQL wokbench`, έτσι ώστε να φτιάξουμε τη βάση μας, με όλα τα tables, triggers και views που είναι απαραίτητα για την ορθή λειτουργεία της, και να τη γεμίσουμε με δεδομένα.
+Then ,and after we have established and confirmed connection using xampp ("run as administrator"), we run the files schema.sql, triggers.sql, views.sql and data.sql in the order listed, indicatively through MySQL wokbench, so that we build our database, with all the tables, triggers and views necessary for its proper functioning, and fill it with data.
 
-Ανοίγουμε ολόκληρο το folder που κατεβάσαμε από το github με κάποιο ide, επιβεβαιώνουμε ότι έχουμε ορίσει ως python interptreter τον `anaconda3`.Για το κάνουμε αυτό ενδεικτικά θα μπορούσαμε να χρησιμοποιήσουμε ως ide το `Visual Studio Code`, ανοίγοντάς το από τον `Anaconda Navigator`.
+We open the whole folder we downloaded from github with an ide, confirm that we have set anaconda3 as python interptreter; to do this we could use Visual Studio Code as ide, opening it from Anaconda Navigator.
 
-Μέσω του ide, βάζουμε στο αρχείο  `__init__.py` τα στοιχεία της βάσης και του `user`, προσοχή αν έχετε κωδικό για τον root user βγάλτε το πεδίο `app.config[MYSQL_PASSWORD]` από σχόλιο και πληκτρολογήστε σε αυτό τον κωδικό που έχετε ορίσει. 
+Through ide, we put in the __init__.py file the base and user details, attention if you have a password for the root user take out the app.config[MYSQL_PASSWORD] field from comment and type in the password you have set in it.
 
-Τέλος εκτελούμε το αρχείο `run.py` και μπορούμε να ανοίξουμε τη βάση στο browser στη διεύθυνση που ορίζει ο host (by default: http://localhost:3000). 
+Finally we run the run.py file and we can open the database in the browser at the address specified by the host (by default: http://localhost:3000). 
 
 ## Good Practice
 
